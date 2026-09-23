@@ -11,30 +11,60 @@
   </head>
   <body>
     <header>
-      <img src="/img/logo.svg" alt="logo" />
-      <a href="index.html">Kategorier</a>
+      <a href="index.html"><img src="/img/logo.svg" alt="logo" /></a>
+      <div class="path">
+        <a href="index.html">Kategorier</a>
+        <p>></p>
+        <a href="produktliste.html">Beklædning</a>
+        <p>></p>
+        <a href="produkt.html">Oversized skjorte i råhvid</a>
+      </div>
     </header>
 
     <main>
-      <article class="product_page_container">
-        <div>
+      <section>
+        <article class="product_page_container">
           <img
             src="/img/outfit2.avif"
             alt="boxy oversized langærmet T-shirt med grafisk print i gul"
           />
-        </div>
-        <div class="product_info">
-          <h2>Oversized skjorte i råhvid</h2>
-          <p class="original_price">329,00 kr.</p>
-          <div class="new_price">
-            <p>246,75 kr.</p>
-            <p class="discount_tag">-25%</p>
+          <div class="product_info discount">
+            <div>
+              <h2>Oversized skjorte i råhvid</h2>
+              <p class="articletype_brandname">T-shirt | ASOS</p>
+            </div>
+            <div>
+              <p class="original_price">329,00 kr.</p>
+              <div class="new_price">
+                <p>246,75 kr.</p>
+                <p class="discount_tag">-25%</p>
+              </div>
+            </div>
+            <div class="info">
+              <p><b>Farve:</b><br />Råhvid</p>
+              <p>
+                <br /><b>Produktoplysninger:</b><br />
+                Maskinvask efter anvisningerne på vaskeanvisningen<br /><br />
+                Hoveddel: 70% polyester, 25% bomuld, 5% elastan
+              </p>
+            </div>
           </div>
-          <p>Farve</p>
-          <p>Råhvid</p>
-        </div>
-        <div></div>
-      </article>
+          <div class="size">
+            <form action="">
+              <label for="size">Vælg størrelse:<br /><br /></label>
+              <select name="size" id="size">
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+              <br /><br />
+              <input type="submit" value="Tilføj til kurv" />
+            </form>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer></footer>
