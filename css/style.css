@@ -1,0 +1,190 @@
+/********************* RESET *********************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/******************* HEADER **********************/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: solid 2px black;
+  padding-block: 30px;
+  padding-inline: 50px;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+}
+
+/******************* HEADER **********************/
+
+footer {
+}
+
+/******************* FONTS **********************/
+
+h1 {
+  font-size: 2.5rem;
+  margin-block: 50px 25px;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/******************** INDEX *****************/
+
+section {
+  margin-inline: 50px;
+}
+
+.category_list_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.category_list_container a {
+  background-color: grey;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+
+  padding: 25px;
+  border-radius: 6px;
+}
+
+/***************** PRODUKTLISTE ****************/
+
+.product_list_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-rows: auto auto auto;
+  column-gap: 2rem;
+  row-gap: 10px;
+}
+
+.product_list_container article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+.product_list_container .product a {
+  position: relative;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+.product_list_container a {
+  color: black;
+  text-decoration: none;
+}
+
+.product_list_container .product img {
+  border: solid 1px black;
+}
+
+.product_list_container .articletype_brandname {
+  color: grey;
+  font-size: 0.75rem;
+}
+
+/***************** SOLD OUT & DISCOUNT *****************/
+
+.soldout_tag {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.soldout * {
+  opacity: 50%;
+}
+
+.soldout .soldout_tag {
+  visibility: visible;
+  opacity: 100%;
+}
+
+.new_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount .original_price {
+  text-decoration: line-through;
+  opacity: 25%;
+}
+
+.discount_tag {
+  visibility: hidden;
+}
+
+.discount .discount_tag {
+  visibility: visible;
+
+  display: block;
+  justify-self: end;
+
+  background-color: red;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/***************** PRODUKT SIDE *****************/
+
+.product_page_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  /* grid-template-rows: auto auto auto; */
+  column-gap: 2rem;
+  /* row-gap: 10px; */
+}
+
+/******************** DESKTOP *******************/
+
+@media (min-width: 800px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  /****************** INDEX *********************/
+
+  .category_list_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  /**************** PRODUKTLISTE ****************/
+
+  .product_list_container .articletype_brandname {
+    font-size: 1rem;
+  }
+}
