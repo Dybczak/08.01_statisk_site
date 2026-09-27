@@ -17,7 +17,7 @@ function getData(url) {
     categoryList.innerHTML = "";
 
     categories.forEach((category) => {
-      categoryList.innerHTML += `<a href="/html/produktliste.html">${category.category}</a>`;
+      categoryList.innerHTML += `<a href="produktliste.html">${category.category}</a>`;
     });
   }
 }
