@@ -18,7 +18,7 @@ function getData(url) {
 
     products.forEach((product) => {
       productList.innerHTML += `<article class="product ${product.soldout ? "soldout" : ""}">
-            <a href="/html/produkt.html">
+            <a href="produkt.html">
               <img
                 src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp"
                 alt="boxy oversized langærmet T-shirt med grafisk print i gul"
