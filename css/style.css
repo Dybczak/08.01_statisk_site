@@ -47,6 +47,13 @@ header img {
 
 /******************* FOOTER *********************/
 
+footer div {
+  background-color: rgb(114, 114, 114);
+  color: white;
+  padding: 30px;
+  margin-top: 50px;
+}
+
 /******************* FONTS **********************/
 
 h1 {
@@ -131,7 +138,7 @@ section {
 }
 
 .product_list_container .articletype_brandname {
-  color: grey;
+  color: #808080;
   font-size: 0.75rem;
 }
 
@@ -147,8 +154,8 @@ section {
   padding: 10px;
 }
 
-.soldout * {
-  opacity: 50%;
+.soldout img {
+  opacity: 30%;
 }
 
 .soldout .soldout_tag {
