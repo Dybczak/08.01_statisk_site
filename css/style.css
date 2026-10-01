@@ -27,21 +27,21 @@ header img {
   width: auto;
 }
 
-.path {
+.breadcrumb {
   display: flex;
   column-gap: 10px;
 }
 
-.path a {
+.breadcrumb a {
   text-decoration: none;
   color: black;
 }
 
-.path a:hover {
+.breadcrumb a:hover {
   text-decoration: underline;
 }
 
-.path p {
+.breadcrumb p {
   font-size: 1rem;
 }
 
@@ -101,8 +101,8 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-template-rows: auto auto auto;
-  column-gap: 2rem;
-  row-gap: 10px;
+  column-gap: 40px;
+  row-gap: 20px;
 }
 
 .product_list_container article {
@@ -167,6 +167,14 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.price_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 50px;
 }
 
 .discount .original_price {
